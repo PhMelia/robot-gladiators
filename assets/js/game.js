@@ -95,16 +95,12 @@ var startGame = function() {
       window.alert("You have lost your robot in battle! Game Over!");
       break;
     }
-
   }
-
-  //play again
-  start ();
-
-};
 
 // after the loop ends, player is either out of health or enemies to fight, so run the end Game function
 endGame();
+
+};
 
 
 
@@ -126,8 +122,10 @@ var endGame = function() {
   if (playAgainConfirm) {
     // restart the game
     startGame();
-  }
-  else {
+  } else {
     window.alert("Thank you for paying Robot Gladiators! Come back soon!");
   }
 }
+
+  //play again
+  start ();
